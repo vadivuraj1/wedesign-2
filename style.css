@@ -1,0 +1,751 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+
+:root{
+    --font-family-1:var('Nunito Sans');
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    overflow-x: hidden;
+}
+.nav{
+    width: 100%;
+    height: 70px;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid gray;
+    display: flex;
+    align-items: center;
+}
+.logo{
+    margin: 0 30px;
+    font-weight: bold;
+    font-size: 30px;
+}
+.navlink{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 70px;
+}
+.navlink li {
+    list-style-type: none;
+    margin: 0 10px;
+}
+.navlink li a{
+    text-decoration: none;
+    color: black;
+    text-transform: capitalize;
+}
+.icon{
+    display: flex;
+    align-items: center;
+    margin-right: 30px;
+
+}
+.icon li{
+    list-style-type: none;
+    margin: 0 10px;
+}
+.icon i{
+    background-color: aquamarine;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#check{
+    display: none;
+}
+label{
+    margin-right: 30px;
+    display: none;
+}
+.home{
+    width: 100%;
+    height: 70vh;
+    display: flex;
+}
+.home-l{
+    width: 50%;
+    height: 70vh;
+    background-color: #39ac73;
+}
+.home-r{
+    background-image: url(images/home.jpg);
+    background-position: center;
+    width: 50%;
+    height: 70vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.home-l h6{
+    font-size: 18px;
+    text-transform: capitalize;
+    color: white;
+    margin-left: 50px;
+    margin-top: 150px;
+}
+.home-l p{
+    text-transform: capitalize;
+    color: white;
+    margin-left: 50px;
+    font-size: 50px;
+}
+.home-l button{
+    margin-left: 50px;
+    padding: 10px 20px;
+    text-transform: capitalize;
+    border-radius: 20px;
+    border: none;
+}
+.about{
+    width: 100%;
+    height: 25vh;
+}
+.about h4{
+    text-transform: uppercase;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 20px;
+}
+.about p{
+    text-transform: capitalize;
+    font-size: 25px;
+    text-align: center;
+    width: 25%;
+    display: flex;
+    margin: 20px auto;
+    line-height: 40px;
+    justify-content: center;
+    font-family: var(--font-family-1);
+}
+.design{
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    margin-bottom: 20px;
+}
+.d-l{
+    background-image: url(images/d\ image.jpg);
+    width: 50%;
+    height: 50vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 0 50px;
+}
+.d-r{
+    width: 50%;
+    height: 50vh;
+
+}
+.d-r h4{
+    margin-top: 50px;
+    margin-left: 50px;
+    text-transform: uppercase;
+}
+.d-r h2{
+    margin-left: 50px;
+    font-size: 30px;
+    text-transform: capitalize;
+    margin-top: 10px;
+    color: #39ac73;
+}
+.d-r p{
+    margin-left: 50px;
+    margin-top: 10px;
+}
+.d-r button{
+    margin-left: 50px;
+    background-color: #39ac73;
+    color: white;
+    margin-top: 10px;
+    padding: 10px 20px;
+    text-transform: capitalize;
+    border-radius: 20px;
+    border: none;
+}
+.seller{
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+.seller h4{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 18px;
+}
+.seller h1{
+    text-align: center;
+    text-transform: capitalize;
+    margin: 10px auto;
+    color: #39ac73;
+}
+.product{
+    width: 100%;
+    height: 50vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  
+    gap: 20px;
+}
+.card{
+    width: 300px;
+    height: 300px;  
+}
+.card img{
+    width: 300px;
+}
+.star{
+    display: flex;
+    justify-content: center;
+    color: rgb(255, 247, 3);
+}
+.star li{
+    list-style-type: none;
+}
+.footer h3{
+    text-align: center;
+    color: #39ac73;
+}
+.footer h4{
+    text-align: center;
+}
+.planting{
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    background-color: rgb(191, 235, 234);
+}
+.p-l{
+    width: 40%;
+    height: 90vh;
+}
+.p-r{
+    width: 60%;
+    height: 90vh;
+}
+
+.p-l h4{
+    margin-top: 200px;
+    margin-left: 50px;
+    text-transform: uppercase;
+}
+.p-l h2{
+    margin-left: 50px;
+    font-size: 30px;
+    text-transform: capitalize;
+    margin-top: 10px;
+    color: #39ac73;
+}
+.p-l p{
+    margin-left: 50px;
+    margin-top: 10px;
+}
+.p-l button{
+    margin-left: 50px;
+    background-color: #39ac73;
+    color: white;
+    margin-top: 10px;
+    padding: 10px 20px;
+    text-transform: capitalize;
+    border-radius: 20px;
+    border: none;
+}
+.image-1{
+    width: 300px;
+    height: 300px;
+    margin-top: 200px;  
+    position: absolute;
+    margin-left: 0px;
+}
+.image-2{
+    width: 300px;
+    height: 300px;
+    margin-left: 400px;   
+    margin-top: 10px;
+}
+.image-3{
+    width: 300px;
+    height: 300px;   
+    position: absolute;
+    margin-top: 350px;
+    margin-left: -300px;
+}
+.sshow{
+    width: 100%;
+    height: auto;
+    overflow-x: hidden;
+}
+.testimonial{
+    width: 300%;
+    height: 50vh;
+    background-color: rgb(14, 106, 106);
+    display: flex;
+    animation: slide 10s infinite ease-in-out;
+    overflow-x: hidden;
+}
+@keyframes slide{
+    0%{
+        margin-left: -0%;
+    }
+    20%{
+        margin-left: -0%;
+    }
+    40%{
+        margin-left: -100%;
+    }
+    60%{
+        margin-left: -100%;
+    }
+    80%{
+        margin-left: -200%;
+    }
+    100%{
+        margin-left: -200%;
+    }
+}
+.slider{
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    padding-top: 100px;
+}
+.slider img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: 0 auto;
+    display: flex;
+}
+.slider p{
+    width: 50%;
+    text-align: center;
+    margin: 10px auto;
+    color: white;
+}
+.slider h3{
+    text-align: center;
+    margin: 10px auto;
+    color: white;
+    text-transform: capitalize;
+}
+.news{
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+.news h4{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 18px;
+    margin-top: 20px;
+}
+.news h2{
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 30px;
+    color: #39ac73;
+    margin: 10px 0;
+}
+.update{
+    width: 100%;
+    height: auto;
+    gap: 100px;
+    display: flex;
+    justify-content: center;
+}
+.u-card{
+    width: 300px;
+    height: 300px;
+}
+.u-card img{
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+}
+.bot h3{
+    text-transform: capitalize;
+    color: #39ac73;
+    margin: 5px auto;
+}
+.bot button{
+    padding: 10px 20px;
+    background-color: white;
+    text-transform: capitalize;
+    margin: 5px auto;
+    border: none;
+    font-weight: bold;
+}
+.work{
+    width: 100%;
+    height: auto;
+    margin: 20px 0;
+}
+.work img{
+    width: 298px;
+    height: 200px;
+}
+.letter{
+    width: 100%;
+    height: 25vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.nl{
+    width: 400px;
+    height: auto;
+    text-align: center;
+}
+.nl h2{
+    text-align: center;
+    text-transform: capitalize;
+    color: #39ac73;
+    margin: 10px auto;
+}
+.nl p{
+    width: 50%;
+    margin: 5px auto;
+    
+}
+.mail{
+    width: 150px;
+    margin-left: 0px;
+    padding: 5px 10px;
+    outline: none;
+}
+.nl button{
+    padding: 5px 10px;
+    border: none;
+    text-transform: capitalize;
+    background-color: #39ac73;
+    color: white;
+}
+.parners{
+    width: 300px;
+    height: auto;
+    text-align: center;
+
+}
+.parners h2{
+    margin: 10px auto;
+    color: #39ac73;
+    text-transform: capitalize;
+}
+.parners h4{
+    text-transform: capitalize;
+    margin-top: 10px;
+}
+.contact{
+    width: auto;
+    text-align: center;
+}
+.contact h2{
+    margin: 10px auto;
+    text-align: center;
+    color: #39ac73;
+    text-transform: capitalize;
+}
+.contact li{
+    list-style-type: none;
+    margin-top: 10px;
+    text-align: center;
+}
+.contact i{
+    color: #39ac73;
+}
+.foot{
+    width: 100%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.foot p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@media(max-width:600px){
+    #check{
+        display: none;
+        
+    }
+    label{
+        display: block;
+    }
+    .nav{
+        display: flex;
+        justify-content: space-between;
+    }
+    .navlink{
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        z-index: 1;
+        top: 70px;
+        width: 100%;
+        height: auto;
+        background-color: #39ac73;
+    }
+    .navlink li {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 40px;
+    }
+    #check:checked~.navlink{
+        display: block;
+    }
+    .icon{
+        display: none;
+    }
+    .home{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+    }
+    .home-l{
+        width: 100%;
+        height: auto;
+    }
+    .home-l h6{
+        margin-top: 20px;
+    }
+    .home-l button{
+        margin-bottom: 10px;
+    }
+    .home-r{
+        width: 100%;
+        height: 70vh;
+    }
+    .about{
+        width: 100%;
+        height: auto;
+    }
+    .about p{
+        font-size: 20px;
+        text-align: center;
+        width: 80%;
+        display: flex;
+        margin: 20px auto;
+        line-height: 40px;
+        justify-content: center;
+        font-family: var(--font-family-1);
+    }
+    .design{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+    }
+    .d-l{
+        width: 100%;
+        height: 50vh;
+    }
+    .d-r{
+        width: 100%;
+        height: auto;
+    }
+    .product{
+        display: grid;
+        grid-template-columns: 1fr !important;
+        width: 100%;
+        height: auto;
+      
+    }
+    .card{
+        height: auto;
+        margin: 0 auto;
+    }
+    .planting{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+    }
+    .p-l{
+        width: 100%;
+        height: auto;
+        margin-bottom: 20px;
+    }
+    .p-l h4{
+        margin-top: 10px;
+    }
+    .p-r{
+        width: 100%;
+        height: auto;
+    }
+    .image-1 , .image-2 , .image-3{
+        margin: 10px auto;
+        width: 200px;
+        height: 200px;
+        display: flex;
+        justify-content: center;
+       display: none;
+    }
+    .testimonial{
+        width: 300%;
+        height: auto;
+    }
+    .sshow{
+        height: 100%;
+        height: auto;
+    }
+    .slider{
+        width: 100%;
+        height: auto;
+        padding-top: 30px;
+    }
+    .news{
+        width: 100%;
+        height: auto;
+    }
+    .update{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+    }
+    .u-card{
+        width: 100%;
+        height: auto;
+    }
+    .bot{
+        width: 100%;
+        height: auto;
+    }
+    .work{
+        display: none;
+    }
+    .work img{
+        width: 100%;
+    }
+    .letter{
+        height: auto;
+        margin-top: 0;
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .mail{
+        width: 50%;
+    }
+    .nl{
+        width: 100%;
+    }
+    .nl button{
+        flex-direction: column;
+    }
+    .parners{
+        text-align: center;
+        margin: 0 auto;
+    }
+}
+@media(max-width:768px){
+    .home-l h6{
+        margin-top: 70px;
+    }
+    .home-l p{
+        font-size: 30px;
+    }
+    .about{
+        width: 100%;
+        height: auto;
+    }
+    .about p{
+        width: 55%;
+    }
+    .design{
+        width: 100%;
+        height: auto;
+    }
+    .d-r h4 , .d-r h2{
+        margin-top: 0px;
+    }
+    .d-r p{
+        font-size: 16px;
+    }
+    .product{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        width: 100%;
+        height: auto;
+      
+    }
+    .card{
+        margin: 0 auto;
+        height: auto;
+    }
+    .planting{
+        width: 100%;
+        height: auto;
+        display: flex;
+    }
+    .p-l h4{
+        margin-top: 50px;
+    }
+    .image-1{
+        width: 100px;
+        height: 100px;
+        margin-top: 100px;  
+        position: absolute;
+        margin-left: 50px;
+    }
+    .image-2{
+        width: 100px;
+        height: 100px;
+        margin-left: 200px;   
+        margin-top: 10px;
+    }
+    .image-3{
+        width: 100px;
+        height: 100px;   
+        position: absolute;
+        margin-top: 150px;
+        margin-left: -100px;
+    }
+    .sshow{
+        width: 100%;
+        height: auto;
+        overflow-x: hidden;
+    }
+    .slider{
+        width: 100%;
+        height: auto;
+        padding-top: 30px;
+    }
+    .testimonial{
+        width: 300%;
+        height: auto;
+    }
+    .update{
+        gap: 10px;
+        margin-left: 10%;
+        width: 80%;
+    }
+    .u-card{
+        width: 200px;
+        height: 200px;
+    }
+    .u-card img{
+        width: 200px;
+        height: 200px;
+        border-radius: 10px;
+    }
+    .work{
+        margin-top: 50vh;
+      align-items: center;
+    }
+    .work img{
+        width: 150px;
+        height: 150px;
+    }
+}
